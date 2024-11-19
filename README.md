@@ -10,13 +10,14 @@ Configurable Output: Save crawl results to a JSON file or a MongoDB database.
 Robust Logging: Structured logging with error handling for debugging.
 
 Project Structure
-
+```bash
 .
 ├── main.py                  # Entry point for the crawler
 ├── endpoint.py              # Core logic for recursive crawling
 ├── lib/
 │   ├── extract.py           # Functions to fetch and parse webpage content
 │   └── output.py            # Functions to save results to file or MongoDB
+```
 
 
 
@@ -36,7 +37,9 @@ Run the crawler using main.py with the following arguments:
 python main.py --url <URL> [--max-depth <DEPTH>] [--max-pages <PAGES>] --output-type <TYPE> [--output-path <PATH>] [--mongo-uri <URI>]
 ```
 
+
 Arguments:
+
 --url: The starting URL for the crawl (required).
 --max-depth: Maximum recursive depth (default: 3).
 --max-pages: Maximum number of pages to crawl (default: 10).
@@ -84,7 +87,7 @@ save_to_file: Saves the results as a JSON file.
 save_to_mongo: Inserts the results into a MongoDB collection.
 
 
-How to use:
+### How to use:
 
 Setup virtual environment:
 
